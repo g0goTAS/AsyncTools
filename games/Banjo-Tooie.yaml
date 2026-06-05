@@ -80,7 +80,7 @@
   randomize_chuffy: random
   randomize_warp_pads: random
   randomize_silos: random
-  open_silos: 
+  open_silos:
     0: 50
     random-range-2-7: 50
   randomize_boss_loading_zones: random
@@ -265,6 +265,7 @@
         Banjo-Tooie:
           egg_behaviour: random
           progressive_beak_buster: random
+          progressive_shoes: random
           progressive_water_training: random
           progressive_flight: random
           progressive_egg_aiming: random
@@ -276,6 +277,7 @@
         Banjo-Tooie:
           egg_behaviour: random
           progressive_beak_buster: random
+          progressive_shoes: random
           progressive_water_training: random
           progressive_flight: random
           progressive_egg_aiming: random
