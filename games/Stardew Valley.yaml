@@ -147,12 +147,9 @@ Stardew Valley:
     one: 50
     all_movies: 15
     all_movies_loved: 5
-  # start_without: Each value has a 20% chance of being rolled.
+  # start_without: Everything except backpack. Each has a 20% chance of being rolled.
   start_without: []
   start_without_tools:
-    'false': 80
-    'true': 20
-  start_without_backpack:
     'false': 80
     'true': 20
   start_without_landslide:
@@ -164,12 +161,9 @@ Stardew Valley:
   start_without_buildings:
     'false': 80
     'true': 20
-  # eatsanity: Each value has a 20% chance of being rolled.
+  # eatsanity: Not crops, each value has a 20% chance of being rolled. Cooking only if cooksanity is enabled.
   eatsanity: []
   eatsanity_cooking:
-    'false': 80
-    'true': 20
-  eatsanity_crops:
     'false': 80
     'true': 20
   eatsanity_fish:
@@ -184,11 +178,8 @@ Stardew Valley:
   eatsanity_poisonous:
     'false': 80
     'true': 20
-  # secretsanity: Easy/Fishing/Secret Notes only, 20% each.
+  # secretsanity: Fishing, Secret Notes, 20% each. TODO: Add easy secrets once the secret names are clearer.
   secretsanity: []
-  secretsanity_easy:
-    'false': 80
-    'true': 20
   secretsanity_fishing:
     'false': 80
     'true': 20
@@ -425,12 +416,6 @@ Stardew Valley:
         Stardew Valley:
           +start_without: ["Tools"]
     - option_category: Stardew Valley
-      option_name: start_without_backpack
-      option_result: 'true'
-      options:
-        Stardew Valley:
-          +start_without: ["Backpack"]
-    - option_category: Stardew Valley
       option_name: start_without_landslide
       option_result: 'true'
       options:
@@ -450,17 +435,17 @@ Stardew Valley:
           +start_without: ["Buildings"]
     # Eatsanity
     - option_category: Stardew Valley
+      option_name: cooksanity
+      option_result: none
+      options:
+        Stardew Valley:
+          eatsanity_cooking: 'false'
+    - option_category: Stardew Valley
       option_name: eatsanity_cooking
       option_result: 'true'
       options:
         Stardew Valley:
           +eatsanity: ["Cooking"]
-    - option_category: Stardew Valley
-      option_name: eatsanity_crops
-      option_result: 'true'
-      options:
-        Stardew Valley:
-          +eatsanity: ["Crops"]
     - option_category: Stardew Valley
       option_name: eatsanity_fish
       option_result: 'true'
@@ -485,19 +470,7 @@ Stardew Valley:
       options:
         Stardew Valley:
           +eatsanity: ["Poisonous"]
-    - option_category: Stardew Valley
-      option_name: eatsanity_lock_effects
-      option_result: 'true'
-      options:
-        Stardew Valley:
-          +eatsanity: ["Lock Effects"]
     # Secretsanity
-    - option_category: Stardew Valley
-      option_name: secretsanity_easy
-      option_result: 'true'
-      options:
-        Stardew Valley:
-          +secretsanity: ["Easy"]
     - option_category: Stardew Valley
       option_name: secretsanity_fishing
       option_result: 'true'
