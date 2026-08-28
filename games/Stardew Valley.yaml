@@ -189,8 +189,8 @@ Stardew Valley:
   # hatsanity: Only Easy, may consider normal in the future?
   hatsanity: []
   hatsanity_easy:
-    'false': 50
-    'true': 50
+    'false': 70
+    'true': 30
   walnutsanity: ["Puzzles", "Bushes", "Repeatables"] # If Ginger Island rolls excluded, this will automatically disable itself. I have disabled dig spots because they are not noob-friendly. Everything else is better shuffled.
   movement_buff_number: random-range-4-8
   enabled_filler_buffs: ["Luck", "Damage", "Defense", "Immunity", "Health", "Energy", "Bite Rate", "Fish Trap", "Fishing Bar Size"]
